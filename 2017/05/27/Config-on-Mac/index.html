@@ -87,14 +87,17 @@
 
 
 
+<meta name="description" content="配置node安装brew(mac自带ruby)1$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; 安装Xcode安装后检查1$ brew doctor 安装node1$ brew install node 安装git1$ brew install git 配置用户名">
 <meta name="keywords" content="mac,config">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac基本开发配置">
 <meta property="og:url" content="http://yoursite.com/2017/05/27/Config-on-Mac/index.html">
 <meta property="og:site_name" content="BOBBY">
-<meta property="og:updated_time" content="2017-05-28T05:55:19.000Z">
+<meta property="og:description" content="配置node安装brew(mac自带ruby)1$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; 安装Xcode安装后检查1$ brew doctor 安装node1$ brew install node 安装git1$ brew install git 配置用户名">
+<meta property="og:updated_time" content="2017-05-30T10:07:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac基本开发配置">
+<meta name="twitter:description" content="配置node安装brew(mac自带ruby)1$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; 安装Xcode安装后检查1$ brew doctor 安装node1$ brew install node 安装git1$ brew install git 配置用户名">
 
 
 
@@ -339,7 +342,18 @@
       
 
       
-        
+        <h1 id="配置node"><a href="#配置node" class="headerlink" title="配置node"></a>配置node</h1><h3 id="安装brew-mac自带ruby"><a href="#安装brew-mac自带ruby" class="headerlink" title="安装brew(mac自带ruby)"></a>安装brew(mac自带ruby)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ruby <span class="_">-e</span> <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></div></pre></td></tr></table></figure>
+<h3 id="安装Xcode"><a href="#安装Xcode" class="headerlink" title="安装Xcode"></a>安装Xcode</h3><p>安装后检查<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ brew doctor</div></pre></td></tr></table></figure></p>
+<h3 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ brew install node</div></pre></td></tr></table></figure>
+<h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ brew install git</div></pre></td></tr></table></figure>
+<p>配置用户名和邮箱，以后每次git交互都会使用该信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"your_name"</span></div><div class="line">$ git config --global user.email <span class="string">"your_email@gmail.com"</span></div></pre></td></tr></table></figure></p>
+<p>查看git配置信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git config --list</div></pre></td></tr></table></figure></p>
+<h1 id="安装http-server"><a href="#安装http-server" class="headerlink" title="安装http-server"></a>安装http-server</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install http-server -g</div></pre></td></tr></table></figure>
+<h1 id="配置apache-php-mysql"><a href="#配置apache-php-mysql" class="headerlink" title="配置apache, php, mysql"></a>配置apache, php, mysql</h1><h3 id="mac自带apache和php"><a href="#mac自带apache和php" class="headerlink" title="mac自带apache和php"></a>mac自带apache和php</h3><p>启动apache<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apachectl start</div></pre></td></tr></table></figure></p>
+<p>查看版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apachectl －v</div></pre></td></tr></table></figure></p>
+<p>浏览器输入localhost会允许默认根目录下index<br>sudo vim /etc/apache2/httpd.conf 修改apache配置文件<br>DocumentRoot修改默认目录</p>
+<h3 id="php配置"><a href="#php配置" class="headerlink" title="php配置"></a>php配置</h3><p>sudo vim /etc/apache2/httpd.conf 修改apache配置文件<br>找LoadModule php5_module libexec/apache2/libphp5.so这一行，把前面的#号去掉<br>sudo apachectl restart 就可启用php</p>
+
       
     </div>
 
@@ -438,8 +452,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -521,6 +544,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#配置node"><span class="nav-number">1.</span> <span class="nav-text">配置node</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装brew-mac自带ruby"><span class="nav-number">1.0.1.</span> <span class="nav-text">安装brew(mac自带ruby)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Xcode"><span class="nav-number">1.0.2.</span> <span class="nav-text">安装Xcode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node"><span class="nav-number">1.0.3.</span> <span class="nav-text">安装node</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装git"><span class="nav-number">2.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装http-server"><span class="nav-number">3.</span> <span class="nav-text">安装http-server</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置apache-php-mysql"><span class="nav-number">4.</span> <span class="nav-text">配置apache, php, mysql</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#mac自带apache和php"><span class="nav-number">4.0.1.</span> <span class="nav-text">mac自带apache和php</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#php配置"><span class="nav-number">4.0.2.</span> <span class="nav-text">php配置</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

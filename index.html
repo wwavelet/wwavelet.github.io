@@ -344,8 +344,35 @@
       
         
           
-            <h1 id="策略"><a href="#策略" class="headerlink" title="策略"></a>策略</h1><p>角块 彳亍<br>棱块 r2<br>中心 三循环<br>记忆顺序:<br>还原顺序:<br>注意: 四盲的各个簇之间没有奇偶性关联</p>
-<h1 id="坐标和编码法"><a href="#坐标和编码法" class="headerlink" title="坐标和编码法"></a>坐标和编码法</h1><h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1>
+            <h1 id="策略"><a href="#策略" class="headerlink" title="策略"></a>策略</h1><ul>
+<li>角块: 彳亍;棱块: r2;中心: 三循环</li>
+<li>记忆顺序: 棱-&gt;中心-&gt;角</li>
+<li>还原顺序: 角-&gt;中心-&gt;棱</li>
+<li><p>注意: 四盲的各个簇之间没有奇偶性关联</p>
+<h1 id="坐标和编码法"><a href="#坐标和编码法" class="headerlink" title="坐标和编码法"></a>坐标和编码法</h1><p>  选取自己习惯的坐标，比如我是黄上红前。<br>  编码为:<br>  缓冲块的所属位开始编</p>
+<p>  中心缓冲块为D(Ulb)<br>  棱块缓冲块为J(Drf)<br>  角块缓冲块为A(Ufl)</p>
+</li>
+</ul>
+<h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><h3 id="角公式"><a href="#角公式" class="headerlink" title="角公式"></a>角公式</h3><p>   与三盲一致，出现奇偶校验时最后做</p>
+<h3 id="中心公式"><a href="#中心公式" class="headerlink" title="中心公式"></a>中心公式</h3><blockquote>
+<p>三循环转换机原理<br>当出现相邻两个面时:</p>
+<ul>
+<li>如果有两个块的面，两个块是相对的，就转换成三个面</li>
+<li>如果两个块是相邻的，<h3 id="棱公式"><a href="#棱公式" class="headerlink" title="棱公式"></a>棱公式</h3>与三盲R2法基本一致。以下特殊:</li>
+<li>当B或者N被编在偶数位时，需要互换，即如RN，应当编为RB。但要记住依然是N块归位。与三盲R2的区别就是A和M偶数位不需要互换</li>
+<li>F: U R’ U’ x’ U’ R2 U r2 U’ R2 U x U R U’</li>
+<li>A: l’ {F}</li>
+<li>M: l {F}</li>
+<li>B: D (r U R2 U’)(r’ U R2 U’)D’ r2</li>
+<li>N: r2 F (R U R’)d (R U’ R’) d’ F’</li>
+<li>当r2转动奇数次时,最后增加 i:r2 (D’ L’ F)(l’ U2 l’ U2 F2 l’ F2 r U2 r’ U2 l2)(F’ L D)</li>
+</ul>
+</blockquote>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><blockquote>
+<p>scramble(Y/R) = D2 L2 U L2 U’ F2 R2 U F’ R’ B R’ F2 L<br>R’ U’ F2 R’U Rw2 F Uw2 Fw2 F’ B’ D’ R2 U’<br>Rw2 D’ F2 Rw’ U’ L’ U2 L B’ Uw Rw Fw Uw’ Rw’ B’ Rw’</p>
+<p>inspection = x’ y2<br>e= PF BS DT YL ZK HC RB IE MX WA QE<em> GO Gi<br>(</em>小循环归位,审核..,编22个码,1个小循环,所以是21个块,加上缓冲块22个块,有两个块还没编)<br>c=LF NX RH<br>c= HK DW BC LX FI JQ YZ AR N(D)<em><br>(</em>最后一个D为补的缓冲块，审核.., 18个码包括了缓冲块,另外6个块以归位，编码结束)</p>
+</blockquote>
+
           
         
       
@@ -489,7 +516,8 @@
           
             <h1 id="编码法"><a href="#编码法" class="headerlink" title="编码法"></a>编码法</h1><h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><p>A: U2 MR U2 R<br>B: D MR U R2 U’ MR’ U R2 U’ D’ M2<br>M: MR’ U2 MR’ U2<br>N: M2 F R U R’ E’ R U’ R’ E F’</p>
 <p>AM = MA = BN = NB =1<br>AN = BM</p>
-<h1 id="实例（s-Y-R-i-I）"><a href="#实例（s-Y-R-i-I）" class="headerlink" title="实例（s=Y/R i=I）"></a>实例（s=Y/R i=I）</h1><h2 id="U-F-R2-L-B-L-B2-R’-F-U-F2-U2-F2-B2-D’-R2-U2-F2-U-L2"><a href="#U-F-R2-L-B-L-B2-R’-F-U-F2-U2-F2-B2-D’-R2-U2-F2-U-L2" class="headerlink" title="U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2"></a>U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2</h2><p>###</p>
+<h1 id="实例（s-Y-R-i-I）"><a href="#实例（s-Y-R-i-I）" class="headerlink" title="实例（s=Y/R i=I）"></a>实例（s=Y/R i=I）</h1><h2 id="U-F-R2-L-B-L-B2-R’-F-U-F2-U2-F2-B2-D’-R2-U2-F2-U-L2"><a href="#U-F-R2-L-B-L-B2-R’-F-U-F2-U2-F2-B2-D’-R2-U2-F2-U-L2" class="headerlink" title="U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2"></a>U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2</h2><h3 id="EF-IN-LG-OX-SO"><a href="#EF-IN-LG-OX-SO" class="headerlink" title="EF* IN LG OX SO"></a>EF* IN LG OX SO</h3><pre><code>GD CE LW NN OY SE
+</code></pre><p>*注意EF应当解析为EjjF</p>
 
           
         
@@ -900,7 +928,18 @@
       
         
           
-            
+            <h1 id="配置node"><a href="#配置node" class="headerlink" title="配置node"></a>配置node</h1><h3 id="安装brew-mac自带ruby"><a href="#安装brew-mac自带ruby" class="headerlink" title="安装brew(mac自带ruby)"></a>安装brew(mac自带ruby)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ruby <span class="_">-e</span> <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></div></pre></td></tr></table></figure>
+<h3 id="安装Xcode"><a href="#安装Xcode" class="headerlink" title="安装Xcode"></a>安装Xcode</h3><p>安装后检查<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ brew doctor</div></pre></td></tr></table></figure></p>
+<h3 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ brew install node</div></pre></td></tr></table></figure>
+<h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ brew install git</div></pre></td></tr></table></figure>
+<p>配置用户名和邮箱，以后每次git交互都会使用该信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"your_name"</span></div><div class="line">$ git config --global user.email <span class="string">"your_email@gmail.com"</span></div></pre></td></tr></table></figure></p>
+<p>查看git配置信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git config --list</div></pre></td></tr></table></figure></p>
+<h1 id="安装http-server"><a href="#安装http-server" class="headerlink" title="安装http-server"></a>安装http-server</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install http-server -g</div></pre></td></tr></table></figure>
+<h1 id="配置apache-php-mysql"><a href="#配置apache-php-mysql" class="headerlink" title="配置apache, php, mysql"></a>配置apache, php, mysql</h1><h3 id="mac自带apache和php"><a href="#mac自带apache和php" class="headerlink" title="mac自带apache和php"></a>mac自带apache和php</h3><p>启动apache<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apachectl start</div></pre></td></tr></table></figure></p>
+<p>查看版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apachectl －v</div></pre></td></tr></table></figure></p>
+<p>浏览器输入localhost会允许默认根目录下index<br>sudo vim /etc/apache2/httpd.conf 修改apache配置文件<br>DocumentRoot修改默认目录</p>
+<h3 id="php配置"><a href="#php配置" class="headerlink" title="php配置"></a>php配置</h3><p>sudo vim /etc/apache2/httpd.conf 修改apache配置文件<br>找LoadModule php5_module libexec/apache2/libphp5.so这一行，把前面的#号去掉<br>sudo apachectl restart 就可启用php</p>
+
           
         
       
