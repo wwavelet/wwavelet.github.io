@@ -87,17 +87,19 @@
 
 
 
-<meta name="description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 坐标和编码法  选取自己习惯的坐标，比如我是黄上红前。  编码为:  缓冲块的所属位开始编   中心缓冲块为D(Ulb)  棱块缓冲块为J(Drf)  角块缓冲块为A(Ufl)   公式角公式   与三盲一致，出现奇偶校验时最">
+<meta name="description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 角块：还原过程中必须保证不使中心转向，出现奇偶校验时留到整个还原最后处理。  坐标和编码法选取自己习惯的坐标，比如我是黄上红前。 编码为:缓冲块的所属位开始编 中心缓冲块为D(Ulb)棱块缓冲块为J(Drf)角块缓冲块为A(U">
 <meta name="keywords" content="cube">
 <meta property="og:type" content="article">
 <meta property="og:title" content="444bld">
 <meta property="og:url" content="http://yoursite.com/2017/05/29/444bld/index.html">
 <meta property="og:site_name" content="BOBBY">
-<meta property="og:description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 坐标和编码法  选取自己习惯的坐标，比如我是黄上红前。  编码为:  缓冲块的所属位开始编   中心缓冲块为D(Ulb)  棱块缓冲块为J(Drf)  角块缓冲块为A(Ufl)   公式角公式   与三盲一致，出现奇偶校验时最">
-<meta property="og:updated_time" content="2017-05-30T10:50:31.000Z">
+<meta property="og:description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 角块：还原过程中必须保证不使中心转向，出现奇偶校验时留到整个还原最后处理。  坐标和编码法选取自己习惯的坐标，比如我是黄上红前。 编码为:缓冲块的所属位开始编 中心缓冲块为D(Ulb)棱块缓冲块为J(Drf)角块缓冲块为A(U">
+<meta property="og:image" content="http://yoursite.com/images/444bldcode.png">
+<meta property="og:updated_time" content="2017-06-08T15:25:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="444bld">
-<meta name="twitter:description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 坐标和编码法  选取自己习惯的坐标，比如我是黄上红前。  编码为:  缓冲块的所属位开始编   中心缓冲块为D(Ulb)  棱块缓冲块为J(Drf)  角块缓冲块为A(Ufl)   公式角公式   与三盲一致，出现奇偶校验时最">
+<meta name="twitter:description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 角块：还原过程中必须保证不使中心转向，出现奇偶校验时留到整个还原最后处理。  坐标和编码法选取自己习惯的坐标，比如我是黄上红前。 编码为:缓冲块的所属位开始编 中心缓冲块为D(Ulb)棱块缓冲块为J(Drf)角块缓冲块为A(U">
+<meta name="twitter:image" content="http://yoursite.com/images/444bldcode.png">
 
 
 
@@ -346,26 +348,30 @@
 <li>角块: 彳亍;棱块: r2;中心: 三循环</li>
 <li>记忆顺序: 棱-&gt;中心-&gt;角</li>
 <li>还原顺序: 角-&gt;中心-&gt;棱</li>
-<li><p>注意: 四盲的各个簇之间没有奇偶性关联</p>
-<h1 id="坐标和编码法"><a href="#坐标和编码法" class="headerlink" title="坐标和编码法"></a>坐标和编码法</h1><p>  选取自己习惯的坐标，比如我是黄上红前。<br>  编码为:<br>  缓冲块的所属位开始编</p>
-<p>  中心缓冲块为D(Ulb)<br>  棱块缓冲块为J(Drf)<br>  角块缓冲块为A(Ufl)</p>
-</li>
+<li>注意: 四盲的各个簇之间没有奇偶性关联</li>
+<li>角块：还原过程中必须保证不使中心转向，出现奇偶校验时留到整个还原最后处理。</li>
 </ul>
+<h1 id="坐标和编码法"><a href="#坐标和编码法" class="headerlink" title="坐标和编码法"></a>坐标和编码法</h1><p>选取自己习惯的坐标，比如我是黄上红前。<br><img src="/images/444bldcode.png" alt="编码"></p>
+<p>编码为:<br>缓冲块的所属位开始编</p>
+<p>中心缓冲块为D(Ulb)<br>棱块缓冲块为J(Drf)<br>角块缓冲块为A(Ufl)</p>
 <h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><h3 id="角公式"><a href="#角公式" class="headerlink" title="角公式"></a>角公式</h3><p>   与三盲一致，出现奇偶校验时最后做</p>
 <h3 id="中心公式"><a href="#中心公式" class="headerlink" title="中心公式"></a>中心公式</h3><blockquote>
 <p>三循环转换机原理<br>当出现相邻两个面时:</p>
 <ul>
 <li>如果有两个块的面，两个块是相对的，就转换成三个面</li>
-<li>如果两个块是相邻的，<h3 id="棱公式"><a href="#棱公式" class="headerlink" title="棱公式"></a>棱公式</h3>与三盲R2法基本一致。以下特殊:</li>
+<li>如果两个块是相邻的，</li>
+</ul>
+</blockquote>
+<h3 id="棱公式"><a href="#棱公式" class="headerlink" title="棱公式"></a>棱公式</h3><p>与三盲R2法基本一致。以下特殊:</p>
+<ul>
 <li>当B或者N被编在偶数位时，需要互换，即如RN，应当编为RB。但要记住依然是N块归位。与三盲R2的区别就是A和M偶数位不需要互换</li>
 <li>F: U R’ U’ x’ U’ R2 U r2 U’ R2 U x U R U’</li>
 <li>A: l’ {F}</li>
 <li>M: l {F}</li>
 <li>B: D (r U R2 U’)(r’ U R2 U’)D’ r2</li>
 <li>N: r2 F (R U R’)d (R U’ R’) d’ F’</li>
-<li>当r2转动奇数次时,最后增加 i:r2 (D’ L’ F)(l’ U2 l’ U2 F2 l’ F2 r U2 r’ U2 l2)(F’ L D)</li>
+<li>当r2转动奇数次时,最后增加 i:r2 (D’ L’ F)(l’ U2 l’ U2 F2 l’ F2 r U2 r’ U2 l2)(F’ L D)<br>  或 r’ U2 r2 U2 r U2 r U2 (Rw3’ R2 Rw2’ U2)(r’ U2 r U2 l’ U2)</li>
 </ul>
-</blockquote>
 <h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><blockquote>
 <p>scramble(Y/R) = D2 L2 U L2 U’ F2 R2 U F’ R’ B R’ F2 L<br>R’ U’ F2 R’U Rw2 F Uw2 Fw2 F’ B’ D’ R2 U’<br>Rw2 D’ F2 Rw’ U’ L’ U2 L B’ Uw Rw Fw Uw’ Rw’ B’ Rw’</p>
 <p>inspection = x’ y2<br>e= PF BS DT YL ZK HC RB IE MX WA QE<em> GO Gi<br>(</em>小循环归位,审核..,编22个码,1个小循环,所以是21个块,加上缓冲块22个块,有两个块还没编)<br>c=LF NX RH<br>c= HK DW BC LX FI JQ YZ AR N(D)<em><br>(</em>最后一个D为补的缓冲块，审核.., 18个码包括了缓冲块,另外6个块以归位，编码结束)</p>
@@ -421,6 +427,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/08/chichuAlgo/" rel="prev" title="chichuAlgo">
+                chichuAlgo <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -492,7 +502,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -514,7 +524,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

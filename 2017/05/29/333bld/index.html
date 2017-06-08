@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="编码法公式A: U2 MR U2 RB: D MR U R2 U’ MR’ U R2 U’ D’ M2M: MR’ U2 MR’ U2N: M2 F R U R’ E’ R U’ R’ E F’ AM = MA = BN = NB =1AN = BM 实例（s=Y/R i=I）U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2EF* IN LG">
+<meta name="description" content="编码法棱块M2第一个循环+完整小循环，  看Df位置上的色块的归位的正确位置所对应的编码，即为第一个编码。 第一个编码的位置上的色块的正确位置即为第二个编码，以此类推。 当编到归位到Df位置上的色块后，第一个小循环结束，如果该色块是正确归位，则寻找下一个需要编码的块的高级面开始编，如果该色块是反向归位，则寻找下一个需要编码的块的低级面开始编，开始进入小循环，小循环必须是个闭环。直至所有需要编码的块">
 <meta name="keywords" content="cube">
 <meta property="og:type" content="article">
 <meta property="og:title" content="三盲彳亍+M2法">
 <meta property="og:url" content="http://yoursite.com/2017/05/29/333bld/index.html">
 <meta property="og:site_name" content="BOBBY">
-<meta property="og:description" content="编码法公式A: U2 MR U2 RB: D MR U R2 U’ MR’ U R2 U’ D’ M2M: MR’ U2 MR’ U2N: M2 F R U R’ E’ R U’ R’ E F’ AM = MA = BN = NB =1AN = BM 实例（s=Y/R i=I）U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2EF* IN LG">
-<meta property="og:updated_time" content="2017-05-30T10:54:00.000Z">
+<meta property="og:description" content="编码法棱块M2第一个循环+完整小循环，  看Df位置上的色块的归位的正确位置所对应的编码，即为第一个编码。 第一个编码的位置上的色块的正确位置即为第二个编码，以此类推。 当编到归位到Df位置上的色块后，第一个小循环结束，如果该色块是正确归位，则寻找下一个需要编码的块的高级面开始编，如果该色块是反向归位，则寻找下一个需要编码的块的低级面开始编，开始进入小循环，小循环必须是个闭环。直至所有需要编码的块">
+<meta property="og:updated_time" content="2017-06-08T15:26:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="三盲彳亍+M2法">
-<meta name="twitter:description" content="编码法公式A: U2 MR U2 RB: D MR U R2 U’ MR’ U R2 U’ D’ M2M: MR’ U2 MR’ U2N: M2 F R U R’ E’ R U’ R’ E F’ AM = MA = BN = NB =1AN = BM 实例（s=Y/R i=I）U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2EF* IN LG">
+<meta name="twitter:description" content="编码法棱块M2第一个循环+完整小循环，  看Df位置上的色块的归位的正确位置所对应的编码，即为第一个编码。 第一个编码的位置上的色块的正确位置即为第二个编码，以此类推。 当编到归位到Df位置上的色块后，第一个小循环结束，如果该色块是正确归位，则寻找下一个需要编码的块的高级面开始编，如果该色块是反向归位，则寻找下一个需要编码的块的低级面开始编，开始进入小循环，小循环必须是个闭环。直至所有需要编码的块">
 
 
 
@@ -364,10 +364,26 @@
       
 
       
-        <h1 id="编码法"><a href="#编码法" class="headerlink" title="编码法"></a>编码法</h1><h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><p>A: U2 MR U2 R<br>B: D MR U R2 U’ MR’ U R2 U’ D’ M2<br>M: MR’ U2 MR’ U2<br>N: M2 F R U R’ E’ R U’ R’ E F’</p>
+        <h1 id="编码法"><a href="#编码法" class="headerlink" title="编码法"></a>编码法</h1><h3 id="棱块M2"><a href="#棱块M2" class="headerlink" title="棱块M2"></a>棱块M2</h3><p>第一个循环+完整小循环，</p>
+<ol>
+<li>看Df位置上的色块的归位的正确位置所对应的编码，即为第一个编码。</li>
+<li>第一个编码的位置上的色块的正确位置即为第二个编码，以此类推。</li>
+<li>当编到归位到Df位置上的色块后，第一个小循环结束，如果该色块是正确归位，则寻找下一个需要编码的块的高级面开始编，如果该色块是反向归位，则寻找下一个需要编码的块的低级面开始编，开始进入小循环，小循环必须是个闭环。直至所有需要编码的块都编到。</li>
+<li>如果编码总数是奇数，则需要做i=u2 M’ u2 M将棱块簇的最后形态变Uf和Ub平移交换。</li>
+<li>如果编码中第偶数个编码是ABMN，则需要编为MNAB。</li>
+</ol>
+<p>A: U2 MR U2 R<br>B: D (MR U R2 U’ MR’ U R2 U’) D’ M2<br>M: MR’ U2 MR’ U2<br>N: M2 F (R U R’ E’ R U’ R’ E) F’<br>F: U R’ U’ x’(U’ R2 U M2 U’ R2 U) x U R U’</p>
 <p>AM = MA = BN = NB =1<br>AN = BM</p>
-<h1 id="实例（s-Y-R-i-I）"><a href="#实例（s-Y-R-i-I）" class="headerlink" title="实例（s=Y/R i=I）"></a>实例（s=Y/R i=I）</h1><h2 id="U-F-R2-L-B-L-B2-R’-F-U-F2-U2-F2-B2-D’-R2-U2-F2-U-L2"><a href="#U-F-R2-L-B-L-B2-R’-F-U-F2-U2-F2-B2-D’-R2-U2-F2-U-L2" class="headerlink" title="U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2"></a>U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2</h2><h3 id="EF-IN-LG-OX-SO"><a href="#EF-IN-LG-OX-SO" class="headerlink" title="EF* IN LG OX SO"></a>EF* IN LG OX SO</h3><pre><code>GD CE LW NN OY SE
-</code></pre><p>*注意EF应当解析为EjjF</p>
+<h3 id="角块彳亍"><a href="#角块彳亍" class="headerlink" title="角块彳亍"></a>角块彳亍</h3><p>转换机原理，(1-2-3)的循环可以分解为1-2，3-2,2-1,2-3，其中1-2的操作所影响的块与3-2的操作所影响的块不可以有另外的交集。<br>编码法:<br>缓冲块Ufl</p>
+<ol>
+<li>第一编码是Ufl所在的位置。依次。。直到编到Ufl块(不编)第一个循环结束。</li>
+<li>第二个循环的起始码是 前码的颜色所属的对应位置(不是所在的对应位置)。</li>
+<li>第三个循环的起始码是 前码的颜色所在的对应位置。</li>
+<li>上述的理论同样适用于单个块翻色的情况，但操作时应当插入jj作为过渡。</li>
+</ol>
+<h1 id="实例1（s-Y-R-i-I）"><a href="#实例1（s-Y-R-i-I）" class="headerlink" title="实例1（s=Y/R i=I）"></a>实例1（s=Y/R i=I）</h1><h2 id="打乱"><a href="#打乱" class="headerlink" title="打乱"></a>打乱</h2><p>U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2</p>
+<h3 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h3><p>EF<em> IN LG OX SO<br>GD CE LW NN OY SE
+</em>注意EF应当解析为EjjF</p>
 
       
     </div>
@@ -494,7 +510,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -516,7 +532,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -571,7 +587,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#编码法"><span class="nav-number">1.</span> <span class="nav-text">编码法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#公式"><span class="nav-number">2.</span> <span class="nav-text">公式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实例（s-Y-R-i-I）"><span class="nav-number">3.</span> <span class="nav-text">实例（s=Y/R i=I）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#U-F-R2-L-B-L-B2-R’-F-U-F2-U2-F2-B2-D’-R2-U2-F2-U-L2"><span class="nav-number">3.1.</span> <span class="nav-text">U F R2 L B L B2 R’ F U F2 U2 F2 B2 D’ R2 U2 F2 U L2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#EF-IN-LG-OX-SO"><span class="nav-number">3.1.1.</span> <span class="nav-text">EF* IN LG OX SO</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#编码法"><span class="nav-number">1.</span> <span class="nav-text">编码法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#棱块M2"><span class="nav-number">1.0.1.</span> <span class="nav-text">棱块M2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#角块彳亍"><span class="nav-number">1.0.2.</span> <span class="nav-text">角块彳亍</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实例1（s-Y-R-i-I）"><span class="nav-number">2.</span> <span class="nav-text">实例1（s=Y/R i=I）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#打乱"><span class="nav-number">2.1.</span> <span class="nav-text">打乱</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#编码"><span class="nav-number">2.1.1.</span> <span class="nav-text">编码</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
