@@ -87,18 +87,18 @@
 
 
 
-<meta name="description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 角块：还原过程中必须保证不使中心转向，出现奇偶校验时留到整个还原最后处理。  坐标和编码法选取自己习惯的坐标，比如我是黄上红前。 编码为:缓冲块的所属位开始编 中心缓冲块为D(Ulb)棱块缓冲块为J(Drf)角块缓冲块为A(U">
+<meta name="description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 角块：还原过程中必须保证不使中心转向，出现奇偶校验时留到整个还原最后处理。  坐标和编码法选取自己习惯的坐标，比如我是黄上红前。 编码为:缓冲块的所属位开始编 中心缓冲块为D(Ulb)  当中心块编到最后一个缓冲块时，再往其它">
 <meta name="keywords" content="cube">
 <meta property="og:type" content="article">
 <meta property="og:title" content="444bld">
 <meta property="og:url" content="http://yoursite.com/2017/05/29/444bld/index.html">
 <meta property="og:site_name" content="BOBBY">
-<meta property="og:description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 角块：还原过程中必须保证不使中心转向，出现奇偶校验时留到整个还原最后处理。  坐标和编码法选取自己习惯的坐标，比如我是黄上红前。 编码为:缓冲块的所属位开始编 中心缓冲块为D(Ulb)棱块缓冲块为J(Drf)角块缓冲块为A(U">
+<meta property="og:description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 角块：还原过程中必须保证不使中心转向，出现奇偶校验时留到整个还原最后处理。  坐标和编码法选取自己习惯的坐标，比如我是黄上红前。 编码为:缓冲块的所属位开始编 中心缓冲块为D(Ulb)  当中心块编到最后一个缓冲块时，再往其它">
 <meta property="og:image" content="http://yoursite.com/images/444bldcode.png">
-<meta property="og:updated_time" content="2017-06-08T15:25:38.000Z">
+<meta property="og:updated_time" content="2018-07-08T10:50:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="444bld">
-<meta name="twitter:description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 角块：还原过程中必须保证不使中心转向，出现奇偶校验时留到整个还原最后处理。  坐标和编码法选取自己习惯的坐标，比如我是黄上红前。 编码为:缓冲块的所属位开始编 中心缓冲块为D(Ulb)棱块缓冲块为J(Drf)角块缓冲块为A(U">
+<meta name="twitter:description" content="策略 角块: 彳亍;棱块: r2;中心: 三循环 记忆顺序: 棱-&amp;gt;中心-&amp;gt;角 还原顺序: 角-&amp;gt;中心-&amp;gt;棱 注意: 四盲的各个簇之间没有奇偶性关联 角块：还原过程中必须保证不使中心转向，出现奇偶校验时留到整个还原最后处理。  坐标和编码法选取自己习惯的坐标，比如我是黄上红前。 编码为:缓冲块的所属位开始编 中心缓冲块为D(Ulb)  当中心块编到最后一个缓冲块时，再往其它">
 <meta name="twitter:image" content="http://yoursite.com/images/444bldcode.png">
 
 
@@ -353,7 +353,10 @@
 </ul>
 <h1 id="坐标和编码法"><a href="#坐标和编码法" class="headerlink" title="坐标和编码法"></a>坐标和编码法</h1><p>选取自己习惯的坐标，比如我是黄上红前。<br><img src="/images/444bldcode.png" alt="编码"></p>
 <p>编码为:<br>缓冲块的所属位开始编</p>
-<p>中心缓冲块为D(Ulb)<br>棱块缓冲块为J(Drf)<br>角块缓冲块为A(Ufl)</p>
+<p>中心缓冲块为D(Ulb)</p>
+<blockquote>
+<p>当中心块编到最后一个缓冲块时，再往其它块编，直到<br>棱块缓冲块为J(Drf)<br>角块缓冲块为A(Ufl)</p>
+</blockquote>
 <h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><h3 id="角公式"><a href="#角公式" class="headerlink" title="角公式"></a>角公式</h3><p>   与三盲一致，出现奇偶校验时最后做</p>
 <h3 id="中心公式"><a href="#中心公式" class="headerlink" title="中心公式"></a>中心公式</h3><blockquote>
 <p>三循环转换机原理<br>当出现相邻两个面时:</p>
@@ -368,9 +371,10 @@
 <li>F: U R’ U’ x’ U’ R2 U r2 U’ R2 U x U R U’</li>
 <li>A: l’ {F}</li>
 <li>M: l {F}</li>
+<li>I: l2 {F}</li>
 <li>B: D (r U R2 U’)(r’ U R2 U’)D’ r2</li>
 <li>N: r2 F (R U R’)d (R U’ R’) d’ F’</li>
-<li>当r2转动奇数次时,最后增加 i:r2 (D’ L’ F)(l’ U2 l’ U2 F2 l’ F2 r U2 r’ U2 l2)(F’ L D)<br>  或 r’ U2 r2 U2 r U2 r U2 (Rw3’ R2 Rw2’ U2)(r’ U2 r U2 l’ U2)</li>
+<li>当r2转动奇数次时,最后增加 i:r2 (D’ L’ F)(l’ U2 l’ U2 F2 l’ F2 r U2 r’ U2 l2)(F’ L D)<br>  或 r2 r’ U2 r2 U2 r U2 r U2 (Rw3’ R2 Rw2’ U2)(r’ U2 r U2 l’ U2)</li>
 </ul>
 <h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><blockquote>
 <p>scramble(Y/R) = D2 L2 U L2 U’ F2 R2 U F’ R’ B R’ F2 L<br>R’ U’ F2 R’U Rw2 F Uw2 Fw2 F’ B’ D’ R2 U’<br>Rw2 D’ F2 Rw’ U’ L’ U2 L B’ Uw Rw Fw Uw’ Rw’ B’ Rw’</p>
@@ -602,7 +606,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
